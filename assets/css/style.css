@@ -1,0 +1,99 @@
+@import url(responsive.css);
+@import url(login.css);
+@import url(pay.css);
+@import url(tables.css);
+@import url(checkout.css);
+
+/*************
+general style 
+*************/
+#menu{
+  display: block;
+}
+#active{
+  display: none;
+}
+*{
+  scrollbar-color: #0000007d #f1f1f1;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0000007d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000007d;
+} 
+
+body{
+  background: #f5f5f5 !important;
+}
+
+.bottom-buttons{
+  height: 35px;
+  display: block;
+  padding: 0 5px;
+}
+
+.bottom-buttons a{
+  display: inline-block;
+  margin-top: 5px;
+  padding: 0 5px;
+  border: 1px solid #8a8a8a;
+  text-decoration: none !important;
+  color:#212529;
+  cursor: pointer;
+}
+.bottom-buttons a:last-child{
+  float: right;
+}
+
+.bottom-keyboard{
+  display: block;
+  width: 100%;
+  bottom: -500px;
+  position: fixed;
+  transition: all .2s linear;
+  background-color: #ececec;
+}
+
+.bottom-keyboard a#keyboardHide{
+  float: right;
+  border: 1px solid #8a8a8a;
+  padding: 0px 20px;
+  cursor: pointer;
+  margin: 5px;
+  display: block;
+}
+
+.bottom-keyboard input.input-1{
+  width: 100%;
+}
+
+.bottom-keyboard .simple-keyboard-1{
+  width: 100%;
+  max-width: 1000px;
+  margin:auto;
+  display: block;
+}
+
+.bottom-keyboard.active{
+  transition: all .2s linear;
+  bottom: 0;
+}
+
+/*************
+general style 
+*************/
+
+
+

@@ -1,0 +1,380 @@
+
+.pay-page {
+  padding-top: 5px;
+  height: calc( 100vh - 35px );
+  overflow: hidden;
+}
+
+.pay-page .table-title{
+  margin:0 5px 5px;
+}
+
+.pay-page .order-list {
+ width: 100%;
+}
+
+.pay-page .order-list ul.todo-list{
+  padding: 0;
+ 
+  height: calc( 100vh - 110px );
+  overflow: auto;
+  background-color: #fff;
+  border:1px solid #8a8a8a;
+      margin: 0 5px;
+}
+.pay-page .order-list ul.todo-list > li{
+  list-style-type: none;
+  display: block;
+  background: #fff;
+  position: relative;
+  padding: 5px 0;
+  border-radius: 0;
+}
+.pay-page .order-list ul.todo-list > li a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.pay-page .order-list ul.todo-list > li.active{
+ background: #1487e6;
+}
+.pay-page .order-list ul.todo-list > li.active input{
+ color: #fff;
+}
+.pay-page .order-list ul.todo-list > li.active #orderRemove{
+ color: #fff;
+}
+.pay-page .order-list ul.todo-list > li input{
+  color:#000;
+  background: transparent;
+  border: 0;
+  display: inline-block;
+  font-size: 20px;
+}
+.pay-page .order-list ul.todo-list > li input:focus{
+  border:0 !important;
+  outline: 0 !important;
+}
+.pay-page .order-list ul.todo-list > li input#orderPiece{
+  width: 15%;
+  text-align: center;
+}
+.pay-page .order-list ul.todo-list > li input#orderName{
+  width: 55%;
+}
+
+.pay-page .order-list ul.todo-list > li input#orderPrice{
+  width: 25%; 
+}
+
+.pay-page .order-list ul.todo-list > li #orderRemove{
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 20px; 
+  z-index: 2;
+}
+
+.pay-page .order-list ul.todo-list > li > ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.pay-page .order-list ul.todo-list > li > ul > li{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.pay-page .order-list .order-count{
+  color:red;
+  font-size: 22px;
+  font-weight: 500;
+  margin:0 5px 5px;
+  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.pay-page .order-list .order-count span:last-child {
+    position: relative;
+    padding-right: 20px;
+}
+
+.pay-page .order-list .order-count span:last-child:after{
+position: absolute;
+content: '₺';
+width: 20px;
+height: 20px;
+top: 0;
+right: 0;
+}
+
+
+.pay-page .order-list .order-count span input{
+ color:red;
+ background: transparent;
+ border: 0;
+ display: inline-block;
+ font-size: 22px;
+ text-align: right;
+ font-weight: 500;
+ width: 50%;
+ float: right;
+}
+
+.pay-page .order-list .order-count span input:focus{
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.pay-page .grid-vertical-menu{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap:5px;
+  height: calc( 95vh - 5px );
+  width: 100%;
+  padding: 0 5px;
+}
+
+.pay-page .grid-vertical-menu .menu-item{
+  display: block;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  border:1px solid #c4c4c4;
+  cursor: pointer;
+}
+
+.pay-page .grid-vertical-menu .menu-item:last-child{
+  background-color: #ff4646;
+}
+
+.pay-page .grid-vertical-menu .menu-item:last-child a{
+  color:#fff;
+}
+
+
+.pay-page .grid-vertical-menu .menu-item a{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color:#212529;
+}
+
+.pay-page .grid-vertical-menu .menu-item span{
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.pay-page .big-price{
+  font-size: 32px;
+  color: #a0a0a0;
+  position: relative;
+  font-weight: 300;
+}
+
+.pay-page .big-price .col-6{
+  height: 55px;
+}
+
+.pay-page .big-price input{
+  border-bottom: 1px solid #a0a0a0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  background-color: transparent;
+  text-align: right;
+  width: 100%;
+}
+
+.pay-page .big-price input:focus{
+  outline: 0;
+}
+
+.pay-page .big-price .change-money{
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: calc( 100% - 4px );
+  top:0;
+  left:0;
+  color:#fff;
+  text-align: center;
+
+}
+
+.pay-page .big-price .change-money span{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.pay-page .center-buttons .hg-theme-default{
+  background-color: transparent;
+  padding-top: 0;
+  height: calc( 100vh - 200px );
+}
+
+.pay-page .center-buttons .hg-theme-default .hg-row{
+  height: 25%;
+}
+
+.pay-page .center-buttons .hg-theme-default .hg-row .hg-button{
+  border-radius: 0;
+  background-color: #1487e6;
+  color:#fff;
+  font-size: 22px;
+  height: 100%;
+}
+.pay-page .center-buttons .hg-theme-default .hg-row .hg-button:active{
+  background-color: #004c8a;
+}
+
+.hg-theme-default .hg-row .hg-button-bksp > span{
+  display: none;
+}
+.hg-theme-default .hg-row .hg-button-bksp:before{
+font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f55a';
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/webfonts/fa-solid-900.eot");
+  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+
+.pay-page .center-buttons .left-btns ul{
+  padding: 0;
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  width: 100%;
+  grid-gap: 5px;
+  height: calc( 100vh - 200px );
+}
+
+.pay-page .center-buttons .left-btns ul li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.pay-page .center-buttons .left-btns ul li a{
+  display: block;
+  border:1px solid #ccc;
+  font-size: 22px;
+  color:#222;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pay-page .center-buttons .left-btns ul li a:active{
+  background-color: #9c9c9c;
+}
+
+
+.pay-page .center-buttons .left-btns ul li a span{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+.pay-page .center-buttons .bottom-btns ul{
+  padding: 0;
+  margin:5px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 5px;
+}
+
+.pay-page .center-buttons .bottom-btns ul li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.pay-page .center-buttons .bottom-btns ul li a{
+  display: block;
+  border:1px solid #ccc;
+  font-size: 22px;
+  color:#222;
+  padding: 5px 0;
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pay-page .center-buttons .bottom-btns ul li a:active{
+background-color: #9c9c9c;
+}
+
+
+
+.pay-page .center-buttons .right-btns ul{
+  padding: 0;
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  width: 100%;
+  grid-gap: 5px;
+  height: calc( 100vh - 200px );
+}
+
+.pay-page .center-buttons .right-btns ul li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.pay-page .center-buttons .right-btns ul li a{
+  display: block;
+  border:1px solid #ccc;
+  font-size: 22px;
+  color:#222;
+  padding: 5px 0;
+  background-color: #fff;
+  text-decoration: none;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.pay-page .center-buttons .right-btns ul li a:active{
+background-color: #9c9c9c;
+}
+
+.pay-page .center-buttons .right-btns ul li a span{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+

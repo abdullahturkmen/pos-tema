@@ -1,0 +1,219 @@
+
+@media only screen and (max-width: 767px) {
+
+/*************
+tables page 
+*************/
+
+.table-page ul.nav-tabs{
+  grid-template-columns: repeat(1, 1fr);
+}
+.table-page ul.nav-tabs li a{
+  padding: 5px;
+  margin: 0 5px 5px;
+}
+.table-page ul.nav-tabs li:first-child a{
+  margin-top:5px;
+}
+.table-page .tab-content{
+  height: calc(100vh - 225px);
+}
+.table-page .tab-content .table-list{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*************
+tables page 
+*************/
+
+
+/*************
+checkout page 
+*************/
+
+
+.checkout .tab-content {
+  height: calc( 95vh - 70px ) !important;
+  margin-right: 5px;
+}
+
+.checkout .checkout-left{
+  padding-right: 20px;
+}
+
+
+
+    /*************
+checkout page 
+*************/
+
+
+    /*************
+pay page 
+*************/
+
+.pay-page{
+  height: 100vh;
+}
+
+.pay-page .order-list .order-count{
+  display: none;
+}
+
+.pay-page .order-list ul.todo-list{
+  height: 16vh;
+}
+
+.pay-page .big-price{
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+
+.pay-page .big-price .change-money{
+
+  width: calc( 100% - 10px );
+  height: calc( 100% - 9px );
+  margin: 5px 0 0 5px;
+
+}
+
+.pay-page .big-price .col-6{
+  height: auto;
+}
+
+.pay-page .center-buttons .hg-theme-default{
+      height: calc( 72vh - 160px );
+}
+
+.pay-page .center-buttons .left-btns ul{
+  padding-left: 5px;
+  height: calc( 72vh - 160px );
+}
+
+.pay-page .center-buttons .hg-theme-default .hg-row{
+  height: 24%;
+
+}
+
+.pay-page .center-buttons .right-btns ul{
+  padding-right: 5px;
+  height: calc( 72vh - 160px );
+}
+
+
+.pay-page .grid-vertical-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.pay-page .grid-vertical-menu .menu-item{
+  height: 60px;
+}
+
+.pay-page .grid-vertical-menu .menu-item span{
+  line-height: .9;
+  font-size: 18px;
+}
+
+.pay-page + .bottom-buttons{
+  display: none;
+}
+
+
+    /*************
+pay page 
+*************/
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+/*************
+login page 
+*************/
+.login .login-logo img{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.login .login-keyboard{
+  height: 95vh;
+}
+
+.login .login-keyboard form{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+  /*************
+login page 
+*************/
+
+
+/*************
+tables page 
+*************/
+
+.table-page .tab-content .table-list{
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+/*************
+tables page 
+*************/
+
+
+/*************
+checkout page 
+*************/
+
+
+.checkout .tab-content {
+  height:calc( 95vh - 330px ) !important;
+
+}
+
+.checkout  #addFood{
+    display: none;
+  }
+
+/*************
+checkout page 
+*************/
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+
+/*************
+tables page 
+*************/
+
+.table-page .tab-content .table-list{
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+/*************
+tables page 
+*************/
+}

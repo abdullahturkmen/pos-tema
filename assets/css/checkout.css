@@ -1,0 +1,340 @@
+.checkout {
+  padding-top: 5px;
+  height: calc( 100vh - 35px );
+  overflow: hidden;
+}
+
+.checkout ul.vertical-food-menu{
+  padding: 0;
+  margin: 0;
+  border-bottom: 0;
+  width: 100%;
+  display: block;
+  overflow: auto;
+  height: calc( 100vh - 35px );
+}
+
+.checkout ul.vertical-food-menu li{
+  display: block;
+  margin: 0 5px 5px;
+  cursor: pointer;
+}
+
+.checkout ul.vertical-food-menu li a{
+  display: block;
+  padding: 15px 0;
+  background-color: #1487e6;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid #838383;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+
+.checkout ul.vertical-food-menu li.active a{
+ background: orange;
+ color:#212529;
+ font-weight: bold
+}
+
+
+
+.checkout .tab-content{
+ overflow: auto;
+ width: 100%;
+
+}
+.checkout .tab-content .food-list{
+ padding: 0;
+ margin: 0;
+ border-bottom: 0;
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 5px;
+}
+
+
+
+.checkout .tab-content .food-list .element-item{
+ list-style-type: none;
+ position: static !important;
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+ height: 85px;
+ cursor: pointer;
+ background-color: green;
+ overflow:hidden;
+ background-position: center !important;
+ background-size: cover !important;
+ transition-duration: 0.0001s !important;
+transform:scale(1) !important;
+}
+
+.checkout .tab-content .food-list .element-item a{
+  display: block;
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  text-align: center;
+  word-break: break-word;
+  background-color: #0080006e;
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: auto;
+  line-height: 80px;
+}
+
+.checkout .tab-content .food-list .element-item a:active{
+ background: #1487e6;
+}
+
+.checkout .checkout-right-close{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 5px;
+ width: 100%;
+ padding: 5px 5px 0 0;
+}
+
+.checkout .checkout-right-close input{
+ border-radius: 0;
+ border:1px solid #8a8a8a;
+ padding: 5px 0;
+ background: #fff;
+ font-size: 22px;
+}
+
+.checkout .checkout-right-close input:focus{
+ border:1px solid !important;
+ outline: 0 !important;
+}
+
+.checkout .checkout-right-close input:last-child{
+ background-color: #ff4646;
+ color:#fff;
+}
+
+.checkout ul.checkout-options{
+  padding: 0;
+  margin:0;
+  border-bottom: 0;
+  width: 100%;
+  display: block;
+  height: calc( 100vh - 35px );
+  overflow: auto;
+}
+
+.checkout ul.checkout-options li{
+ display: block;
+ margin: 0 5px 5px;
+ border: 1px solid #cdcdcd;
+ text-align: center;
+ position: relative;
+ height: 60px;
+ background: #fff;
+ overflow: hidden;
+ cursor: pointer;
+}
+
+.checkout ul.checkout-options li a{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  line-height: 1.2;
+  font-size: 20px;
+  color:#212529;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+.checkout .table-title{
+  display: block;
+  background: gainsboro;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom:5px;
+}
+
+.checkout .table-title span{
+  display: block;
+
+}
+
+.checkout .order-list {
+ width: 100%;
+}
+
+.checkout .order-list ul.todo-list{
+  padding: 0;
+  margin: 0;
+  height: calc( 100vh - 185px );
+  overflow: auto;
+  background-color: #fff;
+  border:1px solid #8a8a8a;
+}
+.checkout .order-list ul.todo-list > li{
+  list-style-type: none;
+  display: block;
+  background: #fff;
+  position: relative;
+  padding: 5px 0;
+  border-radius: 0;
+}
+.checkout .order-list ul.todo-list > li a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.checkout .order-list ul.todo-list > li.active{
+ background: #1487e6;
+}
+.checkout .order-list ul.todo-list > li.active input{
+ color: #fff;
+}
+.checkout .order-list ul.todo-list > li.active #orderRemove{
+ color: #fff;
+}
+.checkout .order-list ul.todo-list > li input{
+  color:#000;
+  background: transparent;
+  border: 0;
+  display: inline-block;
+  font-size: 20px;
+}
+.checkout .order-list ul.todo-list > li input:focus{
+  border:0 !important;
+  outline: 0 !important;
+}
+.checkout .order-list ul.todo-list > li input#orderPiece{
+  width: 15%;
+  text-align: center;
+}
+.checkout .order-list ul.todo-list > li input#orderName{
+  width: 55%;
+}
+
+.checkout .order-list ul.todo-list > li input#orderPrice{
+  width: 25%; 
+}
+
+.checkout .order-list ul.todo-list > li #orderRemove{
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 20px; 
+  z-index: 2;
+}
+
+.checkout .order-list ul.todo-list > li > ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.checkout .order-list ul.todo-list > li > ul > li{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.checkout .order-list .order-count{
+  color:red;
+  font-size: 22px;
+  font-weight: 500;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.checkout .order-list .order-count span:last-child{
+  position: relative;
+  padding-right :20px;
+}
+
+.checkout .order-list .order-count span:last-child:after{
+position: absolute;
+content: '₺';
+width: 20px;
+height: 20px;
+top: 0;
+right: 0;
+}
+
+
+.checkout .order-list .order-count span input{
+ color:red;
+ background: transparent;
+ border: 0;
+ display: inline-block;
+ font-size: 22px;
+ text-align: right;
+ font-weight: 500;
+ width: 50%;
+ float: right;
+
+}
+
+.checkout .order-list .order-count span input:focus{
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.checkout .order-list .order-buttons{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 5px;
+ width: 100%;
+}
+
+.checkout .order-list .order-buttons .btn{
+ border-radius: 0;
+ border:1px solid #8a8a8a;
+ padding: 5px 0;
+ background: #fff;
+ font-size: 22px;
+}
+.checkout .order-list .order-buttons .btn:focus{
+ border:1px solid !important;
+ outline: 0 !important;
+}
+.checkout .order-list .order-buttons .btn:last-child{
+ background-color: #ff4646;
+ color:#fff;
+}
+
+
+.checkout .keyboard-content #pieceInput{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ababab;
+  border-radius: 0;
+}
+
+.checkout .keyboard-content .hg-theme-default{
+  border-radius: 0;
+}
+
+.checkout .keyboard-content .hg-theme-default .hg-row .hg-button{
+  border-radius: 0;
+ font-size: 40px;
+
+}

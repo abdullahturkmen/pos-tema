@@ -1,0 +1,80 @@
+
+.table-page {
+  height: calc( 100vh - 35px );
+
+}
+
+.table-page ul.nav-tabs{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+
+.table-page ul.nav-tabs li{
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.table-page ul.nav-tabs li.active a{
+  background-color: #cacaca;
+}
+
+.table-page ul.nav-tabs li a{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px 5px 5px 0;
+  font-size: 28px;
+  text-decoration: none;
+  color:#212529;
+  border: 1px solid #a1a1a1;
+}
+.table-page ul.nav-tabs li:first-child a{
+  margin-left: 5px;
+}
+
+.table-page .tab-content{
+  margin: 5px;
+  width: 100%;
+  display: block;
+  overflow: auto;
+  height: calc(100vh - 125px) !important;
+}
+
+.table-page .tab-content .table-list{
+  display: grid;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  grid-gap: 5px;
+  position: initial !important;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+}
+
+.table-page .tab-content .table-list .element-item{
+  list-style-type: none;
+  position: inherit !important;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  transition-duration: 0.0001s !important;
+transform:scale(1) !important;
+}
+
+.table-page .tab-content .table-list .element-item a{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: white;
+  font-size: 35px;
+  border: 1px solid #d8d8d8;
+  text-decoration: none;
+  color:#212529;
+}
+.table-page .tab-content .table-list .element-item a:active{
+ background-color: orange;
+}

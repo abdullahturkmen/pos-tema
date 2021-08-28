@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>Kasa</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+
+	<div class="container-fluid checkout">
+		<div class="row">
+			<div class="col-12 col-md-5 checkout-left">
+				<div class="row">
+					<div class="col-3">
+						<div class="row">
+							<ul class="checkout-options">
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-9">
+						<div class="row">
+							<div class="table-title">
+								<span>Masa: B 18</span>
+								<span>Durum</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="order-list" id="orderList">
+								<form id="todoListForm" action="fdgh">
+									<ul id="todoList" class="todo-list">
+										<li class="btn" id="13">
+													<input type="text" name="" value="1" id="orderPiece" disabled="disabled">
+													<input type="text" name="" value="Yemek 5" id="orderName" disabled="disabled">
+													<input type="text" name="" value="5" id="orderPrice" disabled="disabled" price="5">
+													<button id="orderRemove" class="order-remove"><i class="fa fa-times"></i></button>
+											<a></a>
+										</li>
+										<li class="btn" id="13">
+													<input type="text" name="" value="3" id="orderPiece" disabled="disabled">
+													<input type="text" name="" value="Yemek 7" id="orderName" disabled="disabled">
+													<input type="text" name="" value="21" id="orderPrice" disabled="disabled" price="7">
+													<button id="orderRemove" class="order-remove"><i class="fa fa-times"></i></button>
+											<a></a>
+										</li>
+									</ul>
+									<div class="order-count">
+										<span>Bakiye:</span>
+										<span>
+											<input type="text" name="" value="26" disabled="disabled" id="orderCount">
+										</span>
+									</div>
+									<div class="order-buttons">
+										<a class="btn" href="pay.html">Ödeme</a>
+										<input class="btn" onclick="goBack()" type="button" value="Kapat">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-7 checkout-right">
+				<div class="row">
+					<div class="col-3">
+						<div class="row">
+							<ul class="menu nav nav-tabs vertical-food-menu">
+								<li data-filter="*" class="active"><a>Tümü</a></li>
+								<li data-filter=".1"><a>Specialler</a></li>
+								<li data-filter=".2"><a>Döner</a></li>
+                <li data-filter=".3"><a>İçecekler</a></li>
+                <li data-filter=".4"><a>Tatlılar</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-9">
+						<div class="row">
+							<div class="tab-content items-wrapper">
+								<div class="food-list" id="foodList">
+									<div id="1" class="element-item item 1" price="1"><a>Yemek 1</a></div>
+									<div id="2" class="element-item item 1" style="background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)" price="2"><a>Yemek 2</a></div>
+									<div id="3" class="element-item item 1" price="45"><a>Yemek 3</a></div>
+									<div id="4" class="element-item item 3" style="background-image:url('https://i2.cnnturk.com/i/cnnturk/75/800x400/53cd3e4bf630992d10eee696')" price="4"><a>Coca Cola</a></div>
+									<div id="5" class="element-item item 3" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg')" price="5"><a>Ayran</a></div>
+									<div id="6" class="element-item item 3" price="6"><a>Gazoz</a></div>
+									<div id="7" class="element-item item 2" price="7" style="background-image: url(https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg)"><a>Döner 1</a></div>
+									<div id="8" class="element-item item 2" price="8"><a>Döner 2</a></div>
+									<div id="9" class="element-item item 2" price="9"><a>Döner 3</a></div>
+									<div id="1" class="element-item item 1" price="1"><a>Yemek 4</a></div>
+									<div id="2" class="element-item item 1" price="2" style="background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"><a>Yemek 5</a></div>
+									<div id="3" class="element-item item 1" price="3"><a>Yemek 6</a></div>
+									<div id="4" class="element-item item 3" price="4"><a>Şalgam Suyu</a></div>
+									<div id="5" class="element-item item 3" price="5"><a>Fanta</a></div>
+									<div id="6" class="element-item item 3" price="6"><a>Sprite</a></div>
+									<div id="7" class="element-item item 2" price="7" style="background-image: url(https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg)"><a>Döner 4</a></div>
+									<div id="8" class="element-item item 2" price="8"><a>Döner 5</a></div>
+									<div id="9" class="element-item item 2" price="9"><a>Döner 6</a></div>
+									<div id="1" class="element-item item 1" price="7"><a>Yemek 7</a></div>
+									<div id="2" class="element-item item 1" price="2" style="background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"><a>Yemek 8</a></div>
+									<div id="3" class="element-item item 1" price="3"><a>Yemek 9</a></div>
+									<div id="4" class="element-item item 3" price="4"><a>Maden Suyu</a></div>
+									<div id="5" class="element-item item 4" style="background-image: url('https://i.nefisyemektarifleri.com/2021/01/01/tam-kivaminda-kazandibi-videolu-6.jpg')" price="5"><a>Kazandibi</a></div>
+									<div id="6" class="element-item item 4" price="6"><a>Sütlü Nuriye</a></div>
+									<div id="7" class="element-item item 2" price="7" style="background-image: url(https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg)"><a>Döner 7</a></div>
+									<div id="8" class="element-item item 2" price="8"><a>Döner 8</a></div>
+									<div id="9" class="element-item item 2" price="9"><a>Döner 9</a></div>
+									
+								</div>
+								
+								
+								
+							</div>
+							<div class="checkout-right-close">
+								<input id="adisyon-open" type="button" value="Adisyon">
+								<input onclick="goBack()" type="button" value="Kapat">
+							</div>
+						</div>
+						<div class="keyboard-content row">
+							<input id="pieceInput" class="input keyboard" type="text" />
+							<div class="simple-keyboard"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="bottom-buttons">
+		<a href="tables.html">Ana Menü</a>
+	</div>
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="assets/js/numeric.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/checkout.js"></script>
+
+
+
+</body>
+
+</html>
